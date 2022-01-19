@@ -147,7 +147,7 @@ label #cancel {
 p {
     font-size: 18px;
     max-width: 760px;
-    padding: 1rem;
+    margin: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -168,12 +168,10 @@ p {
 
 /* INTRODUCTION ABOUT ME */
 
-/* TEXT - UNDERLINE AND SPAN */
-
 span {
     font-size: 24px;
     font-weight: 700;
-    padding: 1rem 0;
+    margin: 1rem 0;
 }
 
 @media (max-width: 500px) {
@@ -184,31 +182,9 @@ span {
 
 /* END OF TEXT - UNDERLINE AND SPAN */
 
-/* TEXT - BODY */
-
-p {
-    font-size: 18px;
-    max-width: 760px;
-    padding: 1rem;
-}
-
-@media (max-width: 800px) {
-    p {
-        max-width: 470px;
-    }
-}
-
-@media (max-width: 500px) {
-    p {
-        font-size: 16px;
-        max-width: 250px;
-    }
-}
-
-/* END OF TEXT - BODY */
 
 .hello img, .chapter img {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 5px;
 }
 
@@ -239,7 +215,7 @@ p {
 
 @media (max-width: 500px) {
     .chapter img {
-        width: 300px;
+        width: 350px;
     }
 }
 
@@ -260,7 +236,7 @@ p {
     height: 100vh;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .me {
         flex-direction: column;
     }
