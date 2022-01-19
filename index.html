@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/uhr2yct.css">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="icon" href="assets/essentials/aalogomonswhite.png" type="image/icon type">
     <script src="https://kit.fontawesome.com/aed7fe3b69.js" crossorigin="anonymous"></script>
     <title>Angeline Andersson - Portfolio - UX / UI - Designer Student</title>
@@ -52,7 +54,7 @@
 <section class="hello">
 
     <div class="me">
-        <div class="headline">
+        <div class="headline" data-aos="fade-up" data-aos-duration="500">
             Angeline Andersson<br>
             Portfolio<br>
             <span>UX / UI - Designer Student</span>
@@ -69,7 +71,7 @@
 <div class="bio">
 
 
-    <div class="chapter">
+    <div class="chapter"data-aos="fade-up" data-aos-duration="500">
 
         <span>Who am I?</span>
 
@@ -99,7 +101,7 @@
 
     
 
-    <div class="chapter">
+    <div class="chapter" data-aos="fade-up" data-aos-duration="500">
 
         <span>Why UX-Design?</span>
 
@@ -133,50 +135,51 @@
     </div>
 
 
-    <div class="chapter">
+    <div class="chapter" data-aos="fade-up" data-aos-duration="500">
 
         <span>Skills</span>
 
         <img src="assets/essentials/skills.png" alt="Picture of all of the digital tools I master" width="800">
     </div>
 
-    
 
-    <div class="chapter">
-
-    <span>Projects</span>
-        
-        <p>↯</p>
-
-    </div>
 
 </div>
+
+
+<div class="chapter" data-aos="fade-up" data-aos-duration="500">
+    <span>Projects</span>
+</div>
+
+
 
 
 <!-- PROJECTS -->
 
 <section class="projects" id="projects">
 
-    <div class="col">
+    
+
+    <div class="col" data-aos="fade-up" data-aos-duration="500">
 
         <a href="oslonaa.html">
-            <img src="assets/essentials/oslonaa-button.png" alt="goto-oslonaa-project" width="400px">
+            <img src="assets/essentials/oslonaa-button.png" alt="goto-oslonaa-project">
         </a>
 
     </div>
 
-    <div class="col">
+    <div class="col" data-aos="fade-up" data-aos-duration="500">
 
         <a href="visavis.html">
-            <img src="assets/essentials/visavis-button.png" alt="goto-visavis-project" width="400px">
+            <img src="assets/essentials/visavis-button.png" alt="goto-visavis-project">
         </a>
 
     </div>
 
-    <div class="col">
+    <div class="col" data-aos="fade-up" data-aos-duration="500">
 
         <a href="serdumeg.html">
-            <img src="assets/essentials/serdumeg-button.png" alt="goto-serdumeg-project" width="400px">
+            <img src="assets/essentials/serdumeg-button.png" alt="goto-serdumeg-project">
         </a>
 
     </section>
@@ -195,7 +198,9 @@
 
 <!-- END OF FOOTER -->
 
-
+<script>
+    AOS.init();
+  </script>
 
 </body>
 
