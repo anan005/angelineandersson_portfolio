@@ -1,0 +1,329 @@
+@font-face {
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://use.typekit.net/uhr2yct.css");
+}
+
+@font-face {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    src: url("https://use.typekit.net/uhr2yct.css");
+}
+
+* {
+    font-family: 'montserrat';
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+
+.main {
+    background-color: black;
+    position: sticky;
+    top: 0;  
+    z-index: 2;
+    height: 100%;
+}
+
+nav {
+    height: 50px;
+}
+
+.toggle {
+    background-color: black;
+}
+
+nav img {
+    position: absolute;
+    width: 30px;
+    top: 5px;
+    left: 12px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 15px;
+}
+
+nav ul li {
+    background-color: black;
+    display: inline-block;
+    line-height: 48px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    position: relative;
+    color: whitesmoke;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: whitesmoke;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: whitesmoke;
+    font-size: 25px;
+    float: right;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 450px) {
+
+    label #btn {
+        display: block;
+    }
+
+    .toggle {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;   
+    }
+
+
+    nav ul li {
+        /* background-color: black; */
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    input[type=checkbox]:checked ~ ul {
+        left: 0;
+        z-index: 2000;
+    } 
+
+}
+
+/* END OF NAVIGATION */
+
+
+
+
+/* OSLO NÅ PROCESS */
+
+
+/* TEXT - UNDERLINE AND SPAN */
+
+span {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    max-width: 760px;
+}
+
+@media (max-width: 800px) {
+    span {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    span {
+        font-size: 18px;
+        max-width: 250px;
+    }
+}
+
+.design-challenge {
+    padding: 3rem 0;
+}
+
+/* END OF TEXT - UNDERLINE AND SPAN */
+
+
+/* TEXT - BODY */
+
+p {
+    font-size: 18px;
+    max-width: 760px;
+    margin: 1rem;
+}
+
+@media (max-width: 800px) {
+    p {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+}
+
+strong {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* END OF TEXT - BODY */
+
+
+/* OSLONÅ IMAGE */
+
+.oslonaa img {
+    padding: 1rem;
+}
+
+@media (max-width: 500px) {
+    .oslonaa img {
+        width: 250px;
+    }
+}
+
+/* END OF OSLONÅ IMAGE */
+
+
+/* SECTION - HEADLINE */
+
+.oslonaa section {
+    flex-direction: column;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.headline {   
+    height: 100vh;
+    font-weight: 700;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline div {   
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END OF SECTION - HEADLINE */
+
+
+/* ABOUT OSLO NÅ */
+
+section.about-oslonaa {
+    background-color: #014A43;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    section.about-oslonaa {
+        background-color: #014A43;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.about-oslonaa div {
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.about-oslonaa ul li {
+    padding: 0.5rem 0;
+    max-width: 450px;
+    list-style: none;
+}
+
+@media (max-width: 500px) {
+    .about-oslonaa ul li {
+        max-width: 250px;
+    }
+}
+
+/* END OF - ABOUT OSLO NÅ */
+
+
+/* RESEARCH */
+
+
+
+/* END OF RESEARCH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* END OF FOOTER */

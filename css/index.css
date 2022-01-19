@@ -1,0 +1,371 @@
+@font-face {
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://use.typekit.net/uhr2yct.css");
+}
+
+@font-face {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    src: url("https://use.typekit.net/uhr2yct.css");
+}
+
+* {
+    font-family: 'montserrat';
+    box-sizing: border-box;
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+
+.main {
+    background-color: black;
+    position: sticky;
+    top: 0;  
+    z-index: 2;
+    height: 100%;
+}
+
+nav {
+    height: 50px;
+}
+
+.toggle {
+    background-color: black;
+}
+
+nav img {
+    position: absolute;
+    width: 30px;
+    top: 5px;
+    left: 12px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 15px;
+}
+
+nav ul li {
+    background-color: black;
+    display: inline-block;
+    line-height: 48px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    position: relative;
+    color: whitesmoke;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: whitesmoke;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: whitesmoke;
+    font-size: 25px;
+    float: right;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 450px) {
+
+    label #btn {
+        display: block;
+    }
+
+    .toggle {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;   
+    }
+
+
+    nav ul li {
+        /* background-color: black; */
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    input[type=checkbox]:checked ~ ul {
+        left: 0;
+        z-index: 2000;
+    } 
+
+}
+
+/* END OF NAVIGATION */
+
+
+/* IMAGE */
+
+
+/* TEXT - BODY */
+
+p {
+    font-size: 18px;
+    max-width: 760px;
+    padding: 1rem;
+}
+
+@media (max-width: 800px) {
+    p {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+}
+
+/* END OF TEXT - BODY */
+
+
+/* INTRODUCTION ABOUT ME */
+
+/* TEXT - UNDERLINE AND SPAN */
+
+span {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+@media (max-width: 500px) {
+    span {
+        font-size: 18px;
+    }
+}
+
+/* END OF TEXT - UNDERLINE AND SPAN */
+
+/* TEXT - BODY */
+
+p {
+    font-size: 18px;
+    max-width: 760px;
+    padding: 1rem;
+}
+
+@media (max-width: 800px) {
+    p {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+}
+
+/* END OF TEXT - BODY */
+
+.hello img, .chapter img {
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.projects img {
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    .projects img {
+        margin: 1rem;
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .chapter img {
+        width: 760px;
+    }
+}
+
+@media (max-width: 800px) {
+    .chapter img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .chapter img {
+        width: 300px;
+    }
+}
+
+
+/* INTRO ABOUT ME */
+
+.hello {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+.me {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+@media (max-width: 650px) {
+    .me {
+        flex-direction: column;
+    }
+}
+
+.headline {
+    padding: 1rem;
+    font-size: 42px;
+    max-width: 670px;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .headline {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .headline span {
+        font-size: 24px;
+    }
+}
+
+
+/* END OF - INTRO ABOUT ME */
+
+/* CHAPTERS */
+
+.bio {
+    padding-top: 3rem;
+    background-color: black;
+    color: white;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chapter {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter a:visited {
+    color: inherit;
+}
+
+.chapter a:hover {
+    color: #7551a1;
+}
+
+/* END OF CHAPTERS */
+
+
+
+/* BUTTONS TO PROJECTS */
+
+.projects {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .projects {
+        padding-top: 4rem;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects img {
+        width: 200px;
+    }
+}
+
+/* END OF BUTTONS TO PROJECTS */
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* END OF FOOTER */
+
+
+
+
