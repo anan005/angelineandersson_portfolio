@@ -298,6 +298,10 @@ span {
     align-items: center;
 }
 
+.chapter a {
+    color: white;
+}
+
 .chapter a:visited {
     color: inherit;
 }
