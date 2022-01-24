@@ -148,6 +148,7 @@ p {
     font-size: 18px;
     max-width: 760px;
     margin: 1rem;
+    line-height: 160%;
 }
 
 @media (max-width: 800px) {
@@ -168,14 +169,14 @@ p {
 
 /* INTRODUCTION ABOUT ME */
 
-span {
+h2 {
     font-size: 24px;
     font-weight: 700;
     margin: 1rem 0;
 }
 
 @media (max-width: 500px) {
-    span {
+    h2 {
         font-size: 18px;
     }
 }
