@@ -147,7 +147,7 @@ label #cancel {
 
 /* TEXT - UNDERLINE AND SPAN */
 
-span {
+h2 {
     font-size: 24px;
     font-weight: 700;
     padding-top: 4rem;
@@ -156,13 +156,13 @@ span {
 }
 
 @media (max-width: 800px) {
-    span {
+    h2 {
         max-width: 470px;
     }
 }
 
 @media (max-width: 500px) {
-    span {
+    h2 {
         font-size: 18px;
         max-width: 250px;
     }
@@ -181,6 +181,7 @@ p {
     font-size: 18px;
     max-width: 760px;
     margin: 1rem;
+    line-height: 160%;
 }
 
 @media (max-width: 800px) {
@@ -207,12 +208,25 @@ strong {
 /* OSLONÅ IMAGE */
 
 .visavis img {
-    padding: 1rem;
+    padding: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    .visavis img {
+        width: 500px;
+    }
 }
 
 @media (max-width: 500px) {
     .visavis img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .visavis img {
         width: 250px;
+        padding: 1rem;
     }
 }
 
@@ -231,7 +245,7 @@ strong {
 }
 
 .headline {   
-    height: 100vh;
+    height: 90vh;
     font-weight: 700;
     padding: 0 2rem;
     justify-content: center;
@@ -243,6 +257,14 @@ strong {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 2000px) {
+    img.mockup {
+        width: 250px;
+        padding: 1rem;
+    }
+}
+
 
 /* END OF SECTION - HEADLINE */
 
@@ -276,10 +298,27 @@ section.about-visavis {
     list-style: none;
 }
 
+.about-visavis ul li h2 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
 @media (max-width: 500px) {
     .about-visavis ul li {
         max-width: 250px;
     }
+}
+
+.about-visavis a {
+    color: white;
+}
+
+.about-visavis a:visited {
+    color: inherit;
+}
+
+.about-visavis a:hover {
+    color: #0B32FB;
 }
 
 /* LIST */
@@ -298,6 +337,7 @@ section.about-visavis {
 
 @media (max-width: 500px) {
     .list ul li {
+        font-size: 16px;
         max-width: 250px;
     }
 }
