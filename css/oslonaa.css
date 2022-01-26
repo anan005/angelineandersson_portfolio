@@ -152,6 +152,7 @@ h2 {
     padding-top: 4rem;
     padding-bottom: 2rem;
     max-width: 760px;
+    /* text-align: center; */
 }
 
 @media (max-width: 800px) {
@@ -162,8 +163,8 @@ h2 {
 
 @media (max-width: 500px) {
     h2 {
-        font-size: 18px;
-        max-width: 250px;
+        padding-top: 2rem;
+        max-width: 300px;
     }
 }
 
@@ -192,7 +193,7 @@ p {
 @media (max-width: 500px) {
     p {
         font-size: 16px;
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
@@ -249,6 +250,7 @@ strong {
     padding: 0 2rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .headline div {   
@@ -260,6 +262,13 @@ strong {
 @media (max-width: 2000px) {
     img.mockup {
         width: 250px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    img.mockup {
+        width: 200px;
         padding: 1rem;
     }
 }
@@ -304,9 +313,32 @@ section.about-oslonaa {
 
 @media (max-width: 500px) {
     .about-oslonaa ul li {
-        max-width: 250px;
+        max-width: 300px;
     }
 }
+
+/* LIST */
+
+.list ul li {
+    max-width: 760px;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+@media (max-width: 900px) {
+    .list ul li {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list ul li {
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
+
+/* END OF LIST */
 
 .about-oslonaa a {
     color: white;

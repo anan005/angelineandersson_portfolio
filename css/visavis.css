@@ -163,7 +163,7 @@ h2 {
 
 @media (max-width: 500px) {
     h2 {
-        font-size: 18px;
+        padding-top: 2rem;
         max-width: 250px;
     }
 }
@@ -193,7 +193,7 @@ p {
 @media (max-width: 500px) {
     p {
         font-size: 16px;
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
@@ -265,6 +265,13 @@ strong {
     }
 }
 
+@media (max-width: 500px) {
+    img.mockup {
+        width: 200px;
+        padding: 1rem;
+    }
+}
+
 
 /* END OF SECTION - HEADLINE */
 
@@ -305,7 +312,7 @@ section.about-visavis {
 
 @media (max-width: 500px) {
     .about-visavis ul li {
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
@@ -338,7 +345,7 @@ section.about-visavis {
 @media (max-width: 500px) {
     .list ul li {
         font-size: 16px;
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
