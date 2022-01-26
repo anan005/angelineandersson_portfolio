@@ -152,7 +152,6 @@ h2 {
     padding-top: 4rem;
     padding-bottom: 2rem;
     max-width: 760px;
-    /* text-align: center; */
 }
 
 @media (max-width: 800px) {
@@ -200,6 +199,12 @@ p {
 strong {
     padding-top: 3rem;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+    .the-project a {
+        font-size: 16px;
+    }
 }
 
 /* END OF TEXT - BODY */
@@ -261,7 +266,7 @@ strong {
 
 @media (max-width: 2000px) {
     img.mockup {
-        width: 250px;
+        width: 300px;
         padding: 1rem;
     }
 }

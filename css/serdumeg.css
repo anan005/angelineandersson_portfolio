@@ -163,8 +163,8 @@ h2 {
 
 @media (max-width: 500px) {
     h2 {
-        font-size: 18px;
-        max-width: 250px;
+        padding-top: 2rem;
+        max-width: 300px;
     }
 }
 
@@ -268,6 +268,7 @@ strong {
     padding: 0 2rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .headline div {   
@@ -324,20 +325,8 @@ section.about-serdumeg {
 
 @media (max-width: 500px) {
     .about-serdumeg ul li {
-        max-width: 250px;
+        max-width: 300px;
     }
-}
-
-.about-serdumeg a {
-    color: white;
-}
-
-.about-serdumeg a:visited {
-    color: inherit;
-}
-
-.about-serdumeg a:hover {
-    color: #F57802;
 }
 
 
@@ -360,11 +349,23 @@ section.about-serdumeg {
 @media (max-width: 500px) {
     .list ul li {
         font-size: 16px;
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
 /* END OF LIST */
+
+.about-serdumeg a {
+    color: white;
+}
+
+.about-serdumeg a:visited {
+    color: inherit;
+}
+
+.about-serdumeg a:hover {
+    color: #F57802;
+}
 
 
 /* FOOTER */
