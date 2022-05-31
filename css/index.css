@@ -330,7 +330,7 @@ h2 {
 
 @media (max-width: 1000px) {
     .projects {
-        padding-top: 4rem;
+        padding-top: 0rem;
         flex-direction: column;
         height: 100%;
     }
