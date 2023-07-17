@@ -192,7 +192,7 @@ h2 {
 img#profile {
     margin: 1rem;
     border-radius: 50%;
-    width: 300px;
+    width: 250px;
 }
 
 @media (max-width: 500px) {
@@ -317,6 +317,10 @@ img#profile {
 
 /* BUTTONS TO PROJECTS */
 
+.col img#work {
+    width: 70%;
+}
+
 .projects {
     justify-content: center;
     align-items: center;
@@ -325,7 +329,7 @@ img#profile {
     flex-direction: row;
     background-color: black;
     color: white;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 @media (max-width: 1000px) {
@@ -336,11 +340,11 @@ img#profile {
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .projects img {
         width: 200px;
     }
-}
+} */
 
 /* END OF BUTTONS TO PROJECTS */
 
