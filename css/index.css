@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: montserrat, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: bold;
     src: url("https://use.typekit.net/uhr2yct.css");
 }
@@ -170,8 +170,8 @@ p {
 /* INTRODUCTION ABOUT ME */
 
 h2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     margin: 1rem 0;
 }
 
@@ -189,9 +189,9 @@ h2 {
     border-radius: 5px;
 }
 
-.projects img {
+img#profile {
     margin: 1rem;
-    border-radius: 5px;
+    border-radius: 50%;
     width: 300px;
 }
 
@@ -245,7 +245,7 @@ h2 {
 
 .headline {
     padding: 1rem;
-    font-size: 42px;
+    font-size: 20px;
     max-width: 670px;
     font-weight: 700;
 }
@@ -258,13 +258,13 @@ h2 {
 
 @media (max-width: 400px) {
     .headline {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 800px) {
     .headline span {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
