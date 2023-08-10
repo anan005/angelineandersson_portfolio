@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: montserrat, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: bold;
     src: url("https://use.typekit.net/uhr2yct.css");
 }
@@ -170,8 +170,8 @@ p {
 /* INTRODUCTION ABOUT ME */
 
 h2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     margin: 1rem 0;
 }
 
@@ -189,10 +189,10 @@ h2 {
     border-radius: 5px;
 }
 
-.projects img {
+img#profile {
     margin: 1rem;
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 50%;
+    width: 250px;
 }
 
 @media (max-width: 500px) {
@@ -245,7 +245,7 @@ h2 {
 
 .headline {
     padding: 1rem;
-    font-size: 42px;
+    font-size: 20px;
     max-width: 670px;
     font-weight: 700;
 }
@@ -258,13 +258,13 @@ h2 {
 
 @media (max-width: 400px) {
     .headline {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 800px) {
     .headline span {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -317,6 +317,10 @@ h2 {
 
 /* BUTTONS TO PROJECTS */
 
+.col img#work {
+    width: 70%;
+}
+
 .projects {
     justify-content: center;
     align-items: center;
@@ -325,22 +329,22 @@ h2 {
     flex-direction: row;
     background-color: black;
     color: white;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 @media (max-width: 1000px) {
     .projects {
-        padding-top: 4rem;
+        padding-top: 0rem;
         flex-direction: column;
         height: 100%;
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .projects img {
         width: 200px;
     }
-}
+} */
 
 /* END OF BUTTONS TO PROJECTS */
 
